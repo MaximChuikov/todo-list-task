@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 30px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+* {
+  color: chartreuse;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+}
+
+.container {
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  overflow-y: auto;
+  border-radius: 24px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: 0 0 100px yellowgreen ;
+}::-webkit-scrollbar {
+   width: 0;
+ }
+
+.form {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.form input, .form select {
+  background-color: transparent;
+  font-size: 20px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid yellowgreen;
+}
+.form input {
+  width: 100%;
+  padding: 4px 2px 4px 6px;
+}
+.form button {
+  padding: 0;
+  color: yellowgreen;
+  border-color: chartreuse;
+}
+
+.task-container {
+  border: 1px goldenrod solid;
+  border-radius: 12px;
+  padding: 12px;
+}
+.task-index {
+  position: absolute;
+  display: none;
+}
+.task-index div {
+  position: relative;
+}
+.task-index div div {
+  position: relative;
+  right: calc(100% + 6px);
+  color: yellow;
+  top: 10px;
+  background-color: #282c34;
+  box-shadow: 0 0 10px #282c34;
+  border-radius: 12px;
+}
+.task-container div {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  justify-content: space-between;
+  gap: 10px;
+}
+.clicker-task-buttons {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.task-text[rel="true"] {
+  text-decoration: line-through;
+}
+.task-priority, .task-date {
+  margin-top: auto;
+  font-size: 17px;
+}
+
+
+.importance[rel="0"] {
+  color: chartreuse;
+}
+.importance[rel="1"] {
+  color: yellow;
+}
+.importance[rel="2"] {
+  color: orange;
+}
+.importance[rel="3"] {
+  color: red;
+}
+
+
+
+
