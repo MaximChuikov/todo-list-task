@@ -61,27 +61,25 @@ body {
   padding: 12px;
 }
 .task-index {
-  position: absolute;
-  display: none;
-}
-.task-index div {
   position: relative;
-}
-.task-index div div {
-  position: relative;
-  right: calc(100% + 6px);
-  color: yellow;
+  right: 409px;
   top: 10px;
+  color: yellow;
   background-color: #282c34;
   box-shadow: 0 0 10px #282c34;
   border-radius: 12px;
 }
+
 .task-container div {
   display: flex;
   flex-direction: row;
   width: auto;
+  align-items: center;
   justify-content: space-between;
   gap: 10px;
+}
+.task-buttons-container {
+  float: right;
 }
 .clicker-task-buttons {
   width: 20px;
@@ -95,8 +93,13 @@ body {
   margin-top: auto;
   font-size: 17px;
 }
+.task-date {
+  color: yellowgreen;
+}
 
-
+.importance {
+  z-index: 99;
+}
 .importance[rel="0"] {
   color: chartreuse;
 }

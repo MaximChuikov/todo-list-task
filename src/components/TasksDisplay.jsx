@@ -10,19 +10,10 @@ const TasksDisplay = () => {
             {
                 todoList.map((e, i) => (
                     <div key={e.created.toString()} className={'task-container'}>
-                        {/*3 divs для красивого смещения индекса*/}
-                        <div style={{position: "relative"}}>
+                        <div className={'task-buttons-container'}>
                             <div className={'task-index'}>
-                                <div>
-                                    <div>
-                                        {i + 1}
-                                    </div>
-                                </div>
+                                {i + 1}
                             </div>
-                        </div>
-
-
-                        <div>
                             <input type={'checkbox'}
                                    className={'clicker-task-buttons checkbox'}
                                    defaultChecked={e.isSolved}
