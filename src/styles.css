@@ -28,7 +28,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 14px;
-  box-shadow: 0 0 100px yellowgreen ;
+  box-shadow: 0 0 100px yellowgreen;
+  overflow-x: scroll;
 }::-webkit-scrollbar {
    width: 0;
  }
@@ -111,6 +112,18 @@ body {
 }
 .importance[rel="3"] {
   color: red;
+}
+
+@media (max-width: 600px) {
+  .task-index {
+    right: 0;
+    top: 0;
+  }
+  .container {
+    width: 85vw;
+    height: 100%;
+    margin: 10px;
+  }
 }
 
 
